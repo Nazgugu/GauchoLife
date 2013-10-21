@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Detail</key>
+		<string>Homemade bread with grass-feed beef patty</string>
+		<key>Title</key>
+		<string>Hamburger</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>Very Crispy, very delicious</string>
+		<key>Title</key>
+		<string>French Fries</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>Fresh from water</string>
+		<key>Title</key>
+		<string>Shirmp</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>So delicious that I cannot resist</string>
+		<key>Title</key>
+		<string>Fish</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>Must have one after lunch</string>
+		<key>Title</key>
+		<string>Ice Cream</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>Better than Pa-Pa Jones</string>
+		<key>Title</key>
+		<string>Pizza</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>Drink whatever you want!</string>
+		<key>Title</key>
+		<string>Soda</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>Give you enough vitamin</string>
+		<key>Title</key>
+		<string>Salad</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>Great snake after you done</string>
+		<key>Title</key>
+		<string>Cake</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>We love apples!</string>
+		<key>Title</key>
+		<string>Fruit</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>Legit chinese fried rice</string>
+		<key>Title</key>
+		<string>Fried Rice</string>
+	</dict>
+</array>
+</plist>
