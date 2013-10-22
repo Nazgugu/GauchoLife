@@ -98,11 +98,11 @@
 		AE5A23E11814EF8E00E6CF23 /* CXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A23DA1814EF8E00E6CF23 /* CXAlertView.m */; };
 		AE5A23E51814F73E00E6CF23 /* CSNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A23E41814F73E00E6CF23 /* CSNotificationView.m */; };
 		AE5A23E8181507D700E6CF23 /* CSNotificationView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5A23E7181507D700E6CF23 /* CSNotificationView.xcassets */; };
-		AE5A24031815990F00E6CF23 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A23FA1815990F00E6CF23 /* RECommonFunctions.m */; };
-		AE5A24041815990F00E6CF23 /* REMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A23FC1815990F00E6CF23 /* REMenu.m */; };
-		AE5A24051815990F00E6CF23 /* REMenuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A23FE1815990F00E6CF23 /* REMenuContainerView.m */; };
-		AE5A24061815990F00E6CF23 /* REMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A24001815990F00E6CF23 /* REMenuItem.m */; };
-		AE5A24071815990F00E6CF23 /* REMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A24021815990F00E6CF23 /* REMenuItemView.m */; };
+		AE5A24331816197600E6CF23 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A242A1816197600E6CF23 /* RECommonFunctions.m */; };
+		AE5A24341816197600E6CF23 /* REMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A242C1816197600E6CF23 /* REMenu.m */; };
+		AE5A24351816197600E6CF23 /* REMenuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A242E1816197600E6CF23 /* REMenuContainerView.m */; };
+		AE5A24361816197600E6CF23 /* REMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A24301816197600E6CF23 /* REMenuItem.m */; };
+		AE5A24371816197600E6CF23 /* REMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A24321816197600E6CF23 /* REMenuItemView.m */; };
 		AE8324931814D27F00F65E4A /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8324921814D27F00F65E4A /* food.png */; };
 		AE8324951814DCBB00F65E4A /* cupcakes.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8324941814DCBB00F65E4A /* cupcakes.png */; };
 		AE8324971814DD3600F65E4A /* cupcakes1.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8324961814DD3600F65E4A /* cupcakes1.png */; };
@@ -248,16 +248,16 @@
 		AE5A23E31814F73E00E6CF23 /* CSNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNotificationView.h; sourceTree = "<group>"; };
 		AE5A23E41814F73E00E6CF23 /* CSNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSNotificationView.m; sourceTree = "<group>"; };
 		AE5A23E7181507D700E6CF23 /* CSNotificationView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CSNotificationView.xcassets; sourceTree = "<group>"; };
-		AE5A23F91815990F00E6CF23 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
-		AE5A23FA1815990F00E6CF23 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
-		AE5A23FB1815990F00E6CF23 /* REMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenu.h; sourceTree = "<group>"; };
-		AE5A23FC1815990F00E6CF23 /* REMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenu.m; sourceTree = "<group>"; };
-		AE5A23FD1815990F00E6CF23 /* REMenuContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuContainerView.h; sourceTree = "<group>"; };
-		AE5A23FE1815990F00E6CF23 /* REMenuContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuContainerView.m; sourceTree = "<group>"; };
-		AE5A23FF1815990F00E6CF23 /* REMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuItem.h; sourceTree = "<group>"; };
-		AE5A24001815990F00E6CF23 /* REMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuItem.m; sourceTree = "<group>"; };
-		AE5A24011815990F00E6CF23 /* REMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuItemView.h; sourceTree = "<group>"; };
-		AE5A24021815990F00E6CF23 /* REMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuItemView.m; sourceTree = "<group>"; };
+		AE5A24291816197600E6CF23 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = "../../../../Desktop/GauchoLife(Pre-AlphaV0.020)/GauchoLife/Menu/RECommonFunctions.h"; sourceTree = "<group>"; };
+		AE5A242A1816197600E6CF23 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = "../../../../Desktop/GauchoLife(Pre-AlphaV0.020)/GauchoLife/Menu/RECommonFunctions.m"; sourceTree = "<group>"; };
+		AE5A242B1816197600E6CF23 /* REMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = REMenu.h; path = "../../../../Desktop/GauchoLife(Pre-AlphaV0.020)/GauchoLife/Menu/REMenu.h"; sourceTree = "<group>"; };
+		AE5A242C1816197600E6CF23 /* REMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = REMenu.m; path = "../../../../Desktop/GauchoLife(Pre-AlphaV0.020)/GauchoLife/Menu/REMenu.m"; sourceTree = "<group>"; };
+		AE5A242D1816197600E6CF23 /* REMenuContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = REMenuContainerView.h; path = "../../../../Desktop/GauchoLife(Pre-AlphaV0.020)/GauchoLife/Menu/REMenuContainerView.h"; sourceTree = "<group>"; };
+		AE5A242E1816197600E6CF23 /* REMenuContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = REMenuContainerView.m; path = "../../../../Desktop/GauchoLife(Pre-AlphaV0.020)/GauchoLife/Menu/REMenuContainerView.m"; sourceTree = "<group>"; };
+		AE5A242F1816197600E6CF23 /* REMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = REMenuItem.h; path = "../../../../Desktop/GauchoLife(Pre-AlphaV0.020)/GauchoLife/Menu/REMenuItem.h"; sourceTree = "<group>"; };
+		AE5A24301816197600E6CF23 /* REMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = REMenuItem.m; path = "../../../../Desktop/GauchoLife(Pre-AlphaV0.020)/GauchoLife/Menu/REMenuItem.m"; sourceTree = "<group>"; };
+		AE5A24311816197600E6CF23 /* REMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = REMenuItemView.h; path = "../../../../Desktop/GauchoLife(Pre-AlphaV0.020)/GauchoLife/Menu/REMenuItemView.h"; sourceTree = "<group>"; };
+		AE5A24321816197600E6CF23 /* REMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = REMenuItemView.m; path = "../../../../Desktop/GauchoLife(Pre-AlphaV0.020)/GauchoLife/Menu/REMenuItemView.m"; sourceTree = "<group>"; };
 		AE8324921814D27F00F65E4A /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
 		AE8324941814DCBB00F65E4A /* cupcakes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cupcakes.png; sourceTree = "<group>"; };
 		AE8324961814DD3600F65E4A /* cupcakes1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cupcakes1.png; sourceTree = "<group>"; };
@@ -415,16 +415,16 @@
 		30E0F7A516D54641001949EA /* REMenu */ = {
 			isa = PBXGroup;
 			children = (
-				AE5A23F91815990F00E6CF23 /* RECommonFunctions.h */,
-				AE5A23FA1815990F00E6CF23 /* RECommonFunctions.m */,
-				AE5A23FB1815990F00E6CF23 /* REMenu.h */,
-				AE5A23FC1815990F00E6CF23 /* REMenu.m */,
-				AE5A23FD1815990F00E6CF23 /* REMenuContainerView.h */,
-				AE5A23FE1815990F00E6CF23 /* REMenuContainerView.m */,
-				AE5A23FF1815990F00E6CF23 /* REMenuItem.h */,
-				AE5A24001815990F00E6CF23 /* REMenuItem.m */,
-				AE5A24011815990F00E6CF23 /* REMenuItemView.h */,
-				AE5A24021815990F00E6CF23 /* REMenuItemView.m */,
+				AE5A24291816197600E6CF23 /* RECommonFunctions.h */,
+				AE5A242A1816197600E6CF23 /* RECommonFunctions.m */,
+				AE5A242B1816197600E6CF23 /* REMenu.h */,
+				AE5A242C1816197600E6CF23 /* REMenu.m */,
+				AE5A242D1816197600E6CF23 /* REMenuContainerView.h */,
+				AE5A242E1816197600E6CF23 /* REMenuContainerView.m */,
+				AE5A242F1816197600E6CF23 /* REMenuItem.h */,
+				AE5A24301816197600E6CF23 /* REMenuItem.m */,
+				AE5A24311816197600E6CF23 /* REMenuItemView.h */,
+				AE5A24321816197600E6CF23 /* REMenuItemView.m */,
 			);
 			name = REMenu;
 			path = ../REMenu;
@@ -738,20 +738,20 @@
 			files = (
 				AE04064E1812FD6700ED8462 /* GoldViewController.m in Sources */,
 				AE5A23DB1814EF8E00E6CF23 /* LFDisplayBridge.m in Sources */,
-				AE5A24071815990F00E6CF23 /* REMenuItemView.m in Sources */,
+				AE5A24371816197600E6CF23 /* REMenuItemView.m in Sources */,
 				AE04063F1812FD1100ED8462 /* TPGestureTableViewCell.m in Sources */,
 				AE0406A51813173C00ED8462 /* NAAnnotation.m in Sources */,
 				30E0F78A16D545F7001949EA /* main.m in Sources */,
 				AE0406A81813173C00ED8462 /* NAPinAnnotationView.m in Sources */,
-				AE5A24031815990F00E6CF23 /* RECommonFunctions.m in Sources */,
+				AE5A24331816197600E6CF23 /* RECommonFunctions.m in Sources */,
 				AE04067E18130E9000ED8462 /* SIAlertView.m in Sources */,
 				30E0F78E16D545F7001949EA /* AppDelegate.m in Sources */,
 				AE0406421812FD1100ED8462 /* MZDay.m in Sources */,
 				AE0406431812FD1100ED8462 /* MZDayPicker.m in Sources */,
 				AE04066D1813050F00ED8462 /* NavigationViewController.m in Sources */,
 				AE5A23E11814EF8E00E6CF23 /* CXAlertView.m in Sources */,
-				AE5A24051815990F00E6CF23 /* REMenuContainerView.m in Sources */,
-				AE5A24061815990F00E6CF23 /* REMenuItem.m in Sources */,
+				AE5A24351816197600E6CF23 /* REMenuContainerView.m in Sources */,
+				AE5A24361816197600E6CF23 /* REMenuItem.m in Sources */,
 				AE0406441812FD1100ED8462 /* MZDayPickerCell.m in Sources */,
 				AE5A23DD1814EF8E00E6CF23 /* CXAlertBackgroundWindow.m in Sources */,
 				AE5A23DC1814EF8E00E6CF23 /* LFGlassView.m in Sources */,
@@ -770,7 +770,7 @@
 				AE0406A71813173C00ED8462 /* NAMapView.m in Sources */,
 				AE5A23DE1814EF8E00E6CF23 /* CXAlertButtonItem.m in Sources */,
 				AE0406401812FD1100ED8462 /* TPDataModel.m in Sources */,
-				AE5A24041815990F00E6CF23 /* REMenu.m in Sources */,
+				AE5A24341816197600E6CF23 /* REMenu.m in Sources */,
 				AE5A23DF1814EF8E00E6CF23 /* CXAlertButtonContainerView.m in Sources */,
 				AE0406501812FD6700ED8462 /* DiningViewController.m in Sources */,
 				AE0406A61813173C00ED8462 /* NACallOutView.m in Sources */,

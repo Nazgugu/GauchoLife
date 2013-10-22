@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>CF1A565F-17BF-415A-A767-1A7C8F23D52F</string>
+	<string>44989AB1-6013-45EA-82F2-3A0CD544AABA</string>
 	<key>IDESourceControlProjectName</key>
 	<string>REMenuExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C2E9A73F-7DFF-4CB5-A885-B1C4C4FD6DE9</key>
-		<string>ssh://github.com/romaonthego/REMenu.git</string>
+		<key>784AE450-3CED-4C3C-AF36-6BB4A342C0E6</key>
+		<string>https://github.com/Nazgugu/GauchoLife.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>REMenuExample/REMenuExample.xcodeproj/project.xcworkspace</string>
+	<string>GauchoLife-PreAlphaV020/REMenuExample.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C2E9A73F-7DFF-4CB5-A885-B1C4C4FD6DE9</key>
+		<key>784AE450-3CED-4C3C-AF36-6BB4A342C0E6</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/romaonthego/REMenu.git</string>
+	<string>https://github.com/Nazgugu/GauchoLife.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C2E9A73F-7DFF-4CB5-A885-B1C4C4FD6DE9</string>
+	<string>784AE450-3CED-4C3C-AF36-6BB4A342C0E6</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C2E9A73F-7DFF-4CB5-A885-B1C4C4FD6DE9</string>
+			<string>784AE450-3CED-4C3C-AF36-6BB4A342C0E6</string>
 			<key>IDESourceControlWCCName</key>
-			<string>REMenu</string>
+			<string>GauchoLife</string>
 		</dict>
 	</array>
 </dict>
