@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RootViewController.h"
+//#import "RootViewController.h"
 
-@interface FavoriteViewController : RootViewController
+@interface FavoriteViewController : UIViewController
 //@property (readwrite, nonatomic) NSUInteger badge;
 @property (weak, nonatomic) IBOutlet UITableView *FavoriteTable;
 

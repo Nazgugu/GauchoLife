@@ -11,7 +11,9 @@
 
 @interface FavoriteList : NSObject
 
-+ (NSArray *)allFavoriteResults; // of GameResult
++ (NSArray *)allFavoriteResults;// of DishResults
++ (NSArray *)allFavoriteClassResults;
++ (NSArray *)allFavoriteEventsResults;
 + (void)removeDishWithTitle:(NSString *)TiltleDescrption;
 @property (readwrite, nonatomic) NSString *DishTitle;
 @property (readwrite, nonatomic) NSString *Description;

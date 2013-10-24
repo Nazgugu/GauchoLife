@@ -88,6 +88,16 @@
 		AE1CBD95181495EC0052B218 /* JFBluredScrollSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1CBD92181495EC0052B218 /* JFBluredScrollSubview.m */; };
 		AE1CBD96181495EC0052B218 /* UIScrollView+BluredBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1CBD94181495EC0052B218 /* UIScrollView+BluredBackground.m */; };
 		AE1CBD9818149AC00052B218 /* cheetah960.png in Resources */ = {isa = PBXBuildFile; fileRef = AE1CBD9718149AC00052B218 /* cheetah960.png */; };
+		AE2861EE1818C90D00A28415 /* icon_rightarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2861EB1818C90D00A28415 /* icon_rightarrow.png */; };
+		AE2861EF1818C90D00A28415 /* icon_rightarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2861EC1818C90D00A28415 /* icon_rightarrow@2x.png */; };
+		AE2861F31818C91A00A28415 /* SUNSlideSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2861F21818C91A00A28415 /* SUNSlideSwitchView.m */; };
+		AE2861F71818C9D200A28415 /* SUNSlideSwitchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2861F51818C9D200A28415 /* SUNSlideSwitchDemoViewController.m */; };
+		AE2861F81818C9D200A28415 /* SUNSlideSwitchDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE2861F61818C9D200A28415 /* SUNSlideSwitchDemoViewController.xib */; };
+		AE2861FB1818CA1200A28415 /* SUNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2861FA1818CA1200A28415 /* SUNViewController.m */; };
+		AE2862061818CA3700A28415 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2861FF1818CA3700A28415 /* MMDrawerBarButtonItem.m */; };
+		AE2862071818CA3700A28415 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2862011818CA3700A28415 /* MMDrawerController.m */; };
+		AE2862081818CA3700A28415 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2862031818CA3700A28415 /* MMDrawerVisualState.m */; };
+		AE2862091818CA3700A28415 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2862051818CA3700A28415 /* UIViewController+MMDrawerController.m */; };
 		AE3642C518170261004619FA /* TableViewData.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE3642C418170261004619FA /* TableViewData.plist */; };
 		AE3642CA18170363004619FA /* NRSimplePlist.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3642C918170363004619FA /* NRSimplePlist.m */; };
 		AE4C0E9E181726AA009EA9A9 /* FavoriteList.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4C0E9D181726AA009EA9A9 /* FavoriteList.m */; };
@@ -112,7 +122,6 @@
 		AE5A24241815EFCC00E6CF23 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5A24221815EFCC00E6CF23 /* FavoriteViewController.xib */; };
 		AE5A2427181609CF00E6CF23 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5A2425181609CF00E6CF23 /* star.png */; };
 		AE5A2428181609CF00E6CF23 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5A2426181609CF00E6CF23 /* star@2x.png */; };
-		AE5A243A18161A1100E6CF23 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A243918161A1100E6CF23 /* TabBarViewController.m */; };
 		AE8324931814D27F00F65E4A /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8324921814D27F00F65E4A /* food.png */; };
 		AE8324951814DCBB00F65E4A /* cupcakes.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8324941814DCBB00F65E4A /* cupcakes.png */; };
 		AE8324971814DD3600F65E4A /* cupcakes1.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8324961814DD3600F65E4A /* cupcakes1.png */; };
@@ -125,6 +134,11 @@
 		AEB1F1DE180FB0F300CCE6D0 /* Icon_Activity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEB1F1D8180FB0F300CCE6D0 /* Icon_Activity@2x.png */; };
 		AEB1F1E1180FB5CC00CCE6D0 /* tennis.png in Resources */ = {isa = PBXBuildFile; fileRef = AEB1F1DF180FB5CC00CCE6D0 /* tennis.png */; };
 		AEB1F1E2180FB5CC00CCE6D0 /* tennis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEB1F1E0180FB5CC00CCE6D0 /* tennis@2x.png */; };
+		AEDA29161818D1C60067B9C7 /* FavoriteCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDA29141818D1C60067B9C7 /* FavoriteCourseViewController.m */; };
+		AEDA29171818D1C60067B9C7 /* FavoriteCourseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEDA29151818D1C60067B9C7 /* FavoriteCourseViewController.xib */; };
+		AEDA291B1818D42A0067B9C7 /* FavoriteEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDA29191818D42A0067B9C7 /* FavoriteEventsViewController.m */; };
+		AEDA291C1818D42A0067B9C7 /* FavoriteEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEDA291A1818D42A0067B9C7 /* FavoriteEventsViewController.xib */; };
+		AEDA291E1818D6D50067B9C7 /* red_line_and_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDA291D1818D6D50067B9C7 /* red_line_and_shadow@2x.png */; };
 		AEF6B052180FC981003B4BB7 /* UCSBMAP.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF6B051180FC981003B4BB7 /* UCSBMAP.png */; };
 		C057E30A180FCE61009091C6 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C057E308180FCE61009091C6 /* MapViewController.m */; };
 		C057E30B180FCE61009091C6 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C057E309180FCE61009091C6 /* MapViewController.xib */; };
@@ -239,6 +253,24 @@
 		AE1CBD93181495EC0052B218 /* UIScrollView+BluredBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+BluredBackground.h"; sourceTree = "<group>"; };
 		AE1CBD94181495EC0052B218 /* UIScrollView+BluredBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+BluredBackground.m"; sourceTree = "<group>"; };
 		AE1CBD9718149AC00052B218 /* cheetah960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheetah960.png; sourceTree = "<group>"; };
+		AE2861EB1818C90D00A28415 /* icon_rightarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_rightarrow.png; sourceTree = "<group>"; };
+		AE2861EC1818C90D00A28415 /* icon_rightarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_rightarrow@2x.png"; sourceTree = "<group>"; };
+		AE2861F11818C91A00A28415 /* SUNSlideSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNSlideSwitchView.h; sourceTree = "<group>"; };
+		AE2861F21818C91A00A28415 /* SUNSlideSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNSlideSwitchView.m; sourceTree = "<group>"; };
+		AE2861F41818C9D200A28415 /* SUNSlideSwitchDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNSlideSwitchDemoViewController.h; sourceTree = "<group>"; };
+		AE2861F51818C9D200A28415 /* SUNSlideSwitchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNSlideSwitchDemoViewController.m; sourceTree = "<group>"; };
+		AE2861F61818C9D200A28415 /* SUNSlideSwitchDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUNSlideSwitchDemoViewController.xib; sourceTree = "<group>"; };
+		AE2861F91818CA1200A28415 /* SUNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNViewController.h; sourceTree = "<group>"; };
+		AE2861FA1818CA1200A28415 /* SUNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNViewController.m; sourceTree = "<group>"; };
+		AE2861FD1818CA3700A28415 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		AE2861FE1818CA3700A28415 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		AE2861FF1818CA3700A28415 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		AE2862001818CA3700A28415 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		AE2862011818CA3700A28415 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		AE2862021818CA3700A28415 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		AE2862031818CA3700A28415 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		AE2862041818CA3700A28415 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		AE2862051818CA3700A28415 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		AE3642C418170261004619FA /* TableViewData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TableViewData.plist; sourceTree = "<group>"; };
 		AE3642C818170363004619FA /* NRSimplePlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRSimplePlist.h; sourceTree = "<group>"; };
 		AE3642C918170363004619FA /* NRSimplePlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRSimplePlist.m; sourceTree = "<group>"; };
@@ -282,8 +314,6 @@
 		AE5A24221815EFCC00E6CF23 /* FavoriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		AE5A2425181609CF00E6CF23 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		AE5A2426181609CF00E6CF23 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
-		AE5A243818161A1100E6CF23 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
-		AE5A243918161A1100E6CF23 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		AE8324921814D27F00F65E4A /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
 		AE8324941814DCBB00F65E4A /* cupcakes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cupcakes.png; sourceTree = "<group>"; };
 		AE8324961814DD3600F65E4A /* cupcakes1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cupcakes1.png; sourceTree = "<group>"; };
@@ -297,6 +327,13 @@
 		AEB1F1D8180FB0F300CCE6D0 /* Icon_Activity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_Activity@2x.png"; sourceTree = "<group>"; };
 		AEB1F1DF180FB5CC00CCE6D0 /* tennis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tennis.png; sourceTree = "<group>"; };
 		AEB1F1E0180FB5CC00CCE6D0 /* tennis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tennis@2x.png"; sourceTree = "<group>"; };
+		AEDA29131818D1C60067B9C7 /* FavoriteCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteCourseViewController.h; sourceTree = "<group>"; };
+		AEDA29141818D1C60067B9C7 /* FavoriteCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteCourseViewController.m; sourceTree = "<group>"; };
+		AEDA29151818D1C60067B9C7 /* FavoriteCourseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteCourseViewController.xib; sourceTree = "<group>"; };
+		AEDA29181818D42A0067B9C7 /* FavoriteEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteEventsViewController.h; sourceTree = "<group>"; };
+		AEDA29191818D42A0067B9C7 /* FavoriteEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteEventsViewController.m; sourceTree = "<group>"; };
+		AEDA291A1818D42A0067B9C7 /* FavoriteEventsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteEventsViewController.xib; sourceTree = "<group>"; };
+		AEDA291D1818D6D50067B9C7 /* red_line_and_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red_line_and_shadow@2x.png"; sourceTree = "<group>"; };
 		AEF6B051180FC981003B4BB7 /* UCSBMAP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UCSBMAP.png; sourceTree = "<group>"; };
 		C057E307180FCE61009091C6 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../../../MapViewController.h; sourceTree = "<group>"; };
 		C057E308180FCE61009091C6 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../../../MapViewController.m; sourceTree = "<group>"; };
@@ -323,6 +360,7 @@
 		30B00DB717CCFD200010D439 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AEA8F7951818ADED006C98B5 /* App Icon */,
 				AE5A2425181609CF00E6CF23 /* star.png */,
 				AE5A2426181609CF00E6CF23 /* star@2x.png */,
 				AE5A241E1815EBD200E6CF23 /* dish.png */,
@@ -559,6 +597,105 @@
 			name = "Blur Background";
 			sourceTree = "<group>";
 		};
+		AE2861E41818C58000A28415 /* Dining */ = {
+			isa = PBXGroup;
+			children = (
+				AE0406481812FD6700ED8462 /* DiningViewController.h */,
+				AE0406491812FD6700ED8462 /* DiningViewController.m */,
+				AE04064A1812FD6700ED8462 /* DiningViewController.xib */,
+			);
+			name = Dining;
+			sourceTree = "<group>";
+		};
+		AE2861E51818C58700A28415 /* GOLD */ = {
+			isa = PBXGroup;
+			children = (
+				AE0406451812FD6700ED8462 /* GoldViewController.h */,
+				AE0406461812FD6700ED8462 /* GoldViewController.m */,
+				AE0406471812FD6700ED8462 /* GoldViewController.xib */,
+			);
+			name = GOLD;
+			sourceTree = "<group>";
+		};
+		AE2861E61818C59500A28415 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				AE04064B1812FD6700ED8462 /* EventsViewController.h */,
+				AE04064C1812FD6700ED8462 /* EventsViewController.m */,
+				AE04064D1812FD6700ED8462 /* EventsViewController.xib */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		AE2861E71818C5A000A28415 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C057E307180FCE61009091C6 /* MapViewController.h */,
+				C057E308180FCE61009091C6 /* MapViewController.m */,
+				C057E309180FCE61009091C6 /* MapViewController.xib */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		AE2861E81818C5AC00A28415 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				AE2861E91818C8DE00A28415 /* SwitchView */,
+				AE5A24201815EFCC00E6CF23 /* FavoriteViewController.h */,
+				AE5A24211815EFCC00E6CF23 /* FavoriteViewController.m */,
+				AE5A24221815EFCC00E6CF23 /* FavoriteViewController.xib */,
+				AEDA29131818D1C60067B9C7 /* FavoriteCourseViewController.h */,
+				AEDA29141818D1C60067B9C7 /* FavoriteCourseViewController.m */,
+				AEDA29151818D1C60067B9C7 /* FavoriteCourseViewController.xib */,
+				AEDA29181818D42A0067B9C7 /* FavoriteEventsViewController.h */,
+				AEDA29191818D42A0067B9C7 /* FavoriteEventsViewController.m */,
+				AEDA291A1818D42A0067B9C7 /* FavoriteEventsViewController.xib */,
+			);
+			name = Favorites;
+			sourceTree = "<group>";
+		};
+		AE2861E91818C8DE00A28415 /* SwitchView */ = {
+			isa = PBXGroup;
+			children = (
+				AE2861FC1818CA2500A28415 /* Drawer */,
+				AE2861F91818CA1200A28415 /* SUNViewController.h */,
+				AE2861FA1818CA1200A28415 /* SUNViewController.m */,
+				AE2861F41818C9D200A28415 /* SUNSlideSwitchDemoViewController.h */,
+				AE2861F51818C9D200A28415 /* SUNSlideSwitchDemoViewController.m */,
+				AE2861F61818C9D200A28415 /* SUNSlideSwitchDemoViewController.xib */,
+				AE2861F11818C91A00A28415 /* SUNSlideSwitchView.h */,
+				AE2861F21818C91A00A28415 /* SUNSlideSwitchView.m */,
+				AE2861EA1818C90000A28415 /* Resource */,
+			);
+			name = SwitchView;
+			sourceTree = "<group>";
+		};
+		AE2861EA1818C90000A28415 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AEDA291D1818D6D50067B9C7 /* red_line_and_shadow@2x.png */,
+				AE2861EB1818C90D00A28415 /* icon_rightarrow.png */,
+				AE2861EC1818C90D00A28415 /* icon_rightarrow@2x.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		AE2861FC1818CA2500A28415 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				AE2861FD1818CA3700A28415 /* MMDrawerController+Subclass.h */,
+				AE2861FE1818CA3700A28415 /* MMDrawerBarButtonItem.h */,
+				AE2861FF1818CA3700A28415 /* MMDrawerBarButtonItem.m */,
+				AE2862001818CA3700A28415 /* MMDrawerController.h */,
+				AE2862011818CA3700A28415 /* MMDrawerController.m */,
+				AE2862021818CA3700A28415 /* MMDrawerVisualState.h */,
+				AE2862031818CA3700A28415 /* MMDrawerVisualState.m */,
+				AE2862041818CA3700A28415 /* UIViewController+MMDrawerController.h */,
+				AE2862051818CA3700A28415 /* UIViewController+MMDrawerController.m */,
+			);
+			name = Drawer;
+			sourceTree = "<group>";
+		};
 		AE4C0E9B1817269B009EA9A9 /* USERDEFAULTS */ = {
 			isa = PBXGroup;
 			children = (
@@ -659,26 +796,21 @@
 			name = "IOS AlertView";
 			sourceTree = "<group>";
 		};
+		AEA8F7951818ADED006C98B5 /* App Icon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "App Icon";
+			sourceTree = "<group>";
+		};
 		AEB1F1C6180F655600CCE6D0 /* SubControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE5A243818161A1100E6CF23 /* TabBarViewController.h */,
-				AE5A243918161A1100E6CF23 /* TabBarViewController.m */,
-				AE0406451812FD6700ED8462 /* GoldViewController.h */,
-				AE0406461812FD6700ED8462 /* GoldViewController.m */,
-				AE0406471812FD6700ED8462 /* GoldViewController.xib */,
-				AE0406481812FD6700ED8462 /* DiningViewController.h */,
-				AE0406491812FD6700ED8462 /* DiningViewController.m */,
-				AE04064A1812FD6700ED8462 /* DiningViewController.xib */,
-				AE04064B1812FD6700ED8462 /* EventsViewController.h */,
-				AE04064C1812FD6700ED8462 /* EventsViewController.m */,
-				AE04064D1812FD6700ED8462 /* EventsViewController.xib */,
-				C057E307180FCE61009091C6 /* MapViewController.h */,
-				C057E308180FCE61009091C6 /* MapViewController.m */,
-				C057E309180FCE61009091C6 /* MapViewController.xib */,
-				AE5A24201815EFCC00E6CF23 /* FavoriteViewController.h */,
-				AE5A24211815EFCC00E6CF23 /* FavoriteViewController.m */,
-				AE5A24221815EFCC00E6CF23 /* FavoriteViewController.xib */,
+				AE2861E51818C58700A28415 /* GOLD */,
+				AE2861E41818C58000A28415 /* Dining */,
+				AE2861E61818C59500A28415 /* Events */,
+				AE2861E71818C5A000A28415 /* Map */,
+				AE2861E81818C5AC00A28415 /* Favorites */,
 			);
 			name = SubControllers;
 			sourceTree = "<group>";
@@ -747,6 +879,7 @@
 				AE04067D18130E9000ED8462 /* SIAlertView.bundle in Resources */,
 				AE0406CF18136EC900ED8462 /* coctail.png in Resources */,
 				AEB1F1DC180FB0F300CCE6D0 /* graduation-cap@2x.png in Resources */,
+				AE2861F81818C9D200A28415 /* SUNSlideSwitchDemoViewController.xib in Resources */,
 				30E0F78816D545F7001949EA /* InfoPlist.strings in Resources */,
 				AE0406AA1813173C00ED8462 /* pinGreen@2x.png in Resources */,
 				AEF6B052180FC981003B4BB7 /* UCSBMAP.png in Resources */,
@@ -761,9 +894,11 @@
 				AEB1F1DD180FB0F300CCE6D0 /* Icon_Activity.png in Resources */,
 				30B00DC317CCFD200010D439 /* Default-568h@2x.png in Resources */,
 				AE0406A31813173C00ED8462 /* callout_right.png in Resources */,
+				AE2861EE1818C90D00A28415 /* icon_rightarrow.png in Resources */,
 				AE1CBD9818149AC00052B218 /* cheetah960.png in Resources */,
 				AE04069D1813173C00ED8462 /* callout_anchor.png in Resources */,
 				AE0406DD1813883700ED8462 /* menu.png in Resources */,
+				AEDA29171818D1C60067B9C7 /* FavoriteCourseViewController.xib in Resources */,
 				AE0406A91813173C00ED8462 /* pinGreen.png in Resources */,
 				AE0406D018136EC900ED8462 /* coctail@2x.png in Resources */,
 				AE0406CA18136D2900ED8462 /* compass@2x.png in Resources */,
@@ -785,6 +920,7 @@
 				30B00DC917CCFD200010D439 /* Icon_Explore@2x.png in Resources */,
 				AE0406D518136F9400ED8462 /* school.png in Resources */,
 				30B00DCA17CCFD200010D439 /* Icon_Home.png in Resources */,
+				AEDA291C1818D42A0067B9C7 /* FavoriteEventsViewController.xib in Resources */,
 				30B00DCB17CCFD200010D439 /* Icon_Home@2x.png in Resources */,
 				AE0406D118136EC900ED8462 /* dining.png in Resources */,
 				AE8324971814DD3600F65E4A /* cupcakes1.png in Resources */,
@@ -799,6 +935,7 @@
 				AE0406531812FD6700ED8462 /* EventsViewController.xib in Resources */,
 				AE0406B01813173C00ED8462 /* pinPurpleFloating@2x.png in Resources */,
 				AE0406DA181371E800ED8462 /* today@2x.png in Resources */,
+				AEDA291E1818D6D50067B9C7 /* red_line_and_shadow@2x.png in Resources */,
 				AE0406B41813173C00ED8462 /* pinRedFloating@2x.png in Resources */,
 				AE0406C918136D2900ED8462 /* compass.png in Resources */,
 				AEB1F1E1180FB5CC00CCE6D0 /* tennis.png in Resources */,
@@ -806,6 +943,7 @@
 				AE04069E1813173C00ED8462 /* callout_anchor@2x.png in Resources */,
 				AE0406AB1813173C00ED8462 /* pinGreenFloating.png in Resources */,
 				AEB1F1DB180FB0F300CCE6D0 /* graduation-cap.png in Resources */,
+				AE2861EF1818C90D00A28415 /* icon_rightarrow@2x.png in Resources */,
 				30B00DCC17CCFD200010D439 /* Icon_Profile.png in Resources */,
 				AE5A241F1815EBD200E6CF23 /* dish.png in Resources */,
 				30B00DCD17CCFD200010D439 /* Icon_Profile@2x.png in Resources */,
@@ -820,6 +958,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE3642CA18170363004619FA /* NRSimplePlist.m in Sources */,
+				AE2862061818CA3700A28415 /* MMDrawerBarButtonItem.m in Sources */,
 				AE5A24231815EFCC00E6CF23 /* FavoriteViewController.m in Sources */,
 				AE04064E1812FD6700ED8462 /* GoldViewController.m in Sources */,
 				AE4C0E9E181726AA009EA9A9 /* FavoriteList.m in Sources */,
@@ -838,10 +977,13 @@
 				AE5A23E11814EF8E00E6CF23 /* CXAlertView.m in Sources */,
 				AE5A24141815D41900E6CF23 /* REMenuContainerView.m in Sources */,
 				AE5A24151815D41900E6CF23 /* REMenuItem.m in Sources */,
+				AE2862081818CA3700A28415 /* MMDrawerVisualState.m in Sources */,
 				AE0406441812FD1100ED8462 /* MZDayPickerCell.m in Sources */,
+				AE2861F71818C9D200A28415 /* SUNSlideSwitchDemoViewController.m in Sources */,
+				AE2861F31818C91A00A28415 /* SUNSlideSwitchView.m in Sources */,
+				AE2862071818CA3700A28415 /* MMDrawerController.m in Sources */,
 				AE5A23DD1814EF8E00E6CF23 /* CXAlertBackgroundWindow.m in Sources */,
 				AE5A23DC1814EF8E00E6CF23 /* LFGlassView.m in Sources */,
-				AE5A243A18161A1100E6CF23 /* TabBarViewController.m in Sources */,
 				AE5A23E01814EF8E00E6CF23 /* CXAlertViewController.m in Sources */,
 				AE04063E1812FD1100ED8462 /* SWTableViewCell.m in Sources */,
 				AE5A241D1815DF4E00E6CF23 /* UIColor+RGBA.m in Sources */,
@@ -850,18 +992,22 @@
 				C057E30A180FCE61009091C6 /* MapViewController.m in Sources */,
 				AE1CBD90181495C40052B218 /* UIImage+ImageEffects.m in Sources */,
 				AE5A23E51814F73E00E6CF23 /* CSNotificationView.m in Sources */,
+				AE2861FB1818CA1200A28415 /* SUNViewController.m in Sources */,
 				AE0406411812FD1100ED8462 /* NSDate+Reporting.m in Sources */,
 				AE04067718130A1200ED8462 /* DTProgressStatus.m in Sources */,
 				AE5A241C1815DF4E00E6CF23 /* DRDynamicSlideShow.m in Sources */,
 				AE04066E1813050F00ED8462 /* RootViewController.m in Sources */,
 				AE1CBD95181495EC0052B218 /* JFBluredScrollSubview.m in Sources */,
 				AE04067618130A1200ED8462 /* DTAlertView.m in Sources */,
+				AE2862091818CA3700A28415 /* UIViewController+MMDrawerController.m in Sources */,
 				AE0406A71813173C00ED8462 /* NAMapView.m in Sources */,
 				AE5A23DE1814EF8E00E6CF23 /* CXAlertButtonItem.m in Sources */,
 				AE0406401812FD1100ED8462 /* TPDataModel.m in Sources */,
 				AE5A24131815D41900E6CF23 /* REMenu.m in Sources */,
 				AE5A23DF1814EF8E00E6CF23 /* CXAlertButtonContainerView.m in Sources */,
+				AEDA291B1818D42A0067B9C7 /* FavoriteEventsViewController.m in Sources */,
 				AE0406501812FD6700ED8462 /* DiningViewController.m in Sources */,
+				AEDA29161818D1C60067B9C7 /* FavoriteCourseViewController.m in Sources */,
 				AE0406A61813173C00ED8462 /* NACallOutView.m in Sources */,
 				AE0406521812FD6700ED8462 /* EventsViewController.m in Sources */,
 			);

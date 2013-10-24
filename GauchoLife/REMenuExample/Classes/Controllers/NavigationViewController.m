@@ -15,6 +15,7 @@
 #import "EventsViewController.h"
 #import "FavoriteViewController.h"
 #import "FavoriteList.h"
+#import "SUNSlideSwitchDemoViewController.h"
 //#import "NRSimplePlist.h"
 
 @interface NavigationViewController ()
@@ -87,13 +88,22 @@
                                                             [weakSelf setViewControllers:@[controller] animated:YES];
                                                         }];
     
-    REMenuItem *favoriteItem = [[REMenuItem alloc] initWithTitle:@"My Favorites"
+    /*REMenuItem *favoriteItem = [[REMenuItem alloc] initWithTitle:@"My Favorites"
                                                         subtitle:@"List of My favorites."
                                                            image:[UIImage imageNamed:@"star"]
                                                 highlightedImage:nil
                                                           action:^(REMenuItem *item) {
                                                               NSLog(@"Item: %@", item);
                                                               FavoriteViewController *controller = [[FavoriteViewController alloc] init];
+                                                              [weakSelf setViewControllers:@[controller] animated:YES];
+                                                          }];*/
+    REMenuItem *favoriteItem = [[REMenuItem alloc] initWithTitle:@"My Favorites"
+                                                        subtitle:@"List of My favorites."
+                                                           image:[UIImage imageNamed:@"star"]
+                                                highlightedImage:nil
+                                                          action:^(REMenuItem *item) {
+                                                              NSLog(@"Item: %@", item);
+                                                              SUNSlideSwitchDemoViewController *controller = [[SUNSlideSwitchDemoViewController alloc] init];
                                                               [weakSelf setViewControllers:@[controller] animated:YES];
                                                           }];
     int badgeNumber = [FavoriteList allFavoriteResults].count;//[FavoriteList allFavoriteResults].count;

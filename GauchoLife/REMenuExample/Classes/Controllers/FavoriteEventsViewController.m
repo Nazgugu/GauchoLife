@@ -1,25 +1,22 @@
 //
-//  FavoriteViewController.m
-//  REMenuExample
+//  FavoriteEventsViewController.m
+//  GauchoLife
 //
-//  Created by Liu Zhe on 10/21/13.
+//  Created by Liu Zhe on 10/23/13.
 //  Copyright (c) 2013 Roman Efimov. All rights reserved.
 //
 
-#import "FavoriteViewController.h"
-//#import "DiningViewController.h"
+#import "FavoriteEventsViewController.h"
 #import "FavoriteList.h"
 #import "SWTableViewCell.h"
 #import "TPDataModel.h"
 
-
-@interface FavoriteViewController () <UITableViewDataSource, UITableViewDelegate,SWTableViewCellDelegate>
-//@property (strong, nonatomic) DiningViewController *Dining;
+@interface FavoriteEventsViewController () <UITableViewDataSource, UITableViewDelegate,SWTableViewCellDelegate>
 @property (nonatomic,strong) NSMutableArray *tableData;
 @property (strong, nonatomic) FavoriteList *dishFavoriteList;
 @end
 
-@implementation FavoriteViewController
+@implementation FavoriteEventsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,30 +30,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //self.title = @"My Favorites";
+    // Do any additional setup after loading the view from its nib.
     self.tableData = [[NSMutableArray alloc]init];
-     for (FavoriteList *favoriteDish in [FavoriteList allFavoriteResults])
-     {
-         TPDataModel *item = [[TPDataModel alloc]init];
-         item.title = favoriteDish.DishTitle;
-         item.detail = favoriteDish.Description;
-         item.isExpand = NO;
-         [self.tableData addObject:item];
-     }
+    for (FavoriteList *favoriteDish in [FavoriteList allFavoriteEventsResults])
+    {
+        TPDataModel *item = [[TPDataModel alloc]init];
+        item.title = favoriteDish.DishTitle;
+        item.detail = favoriteDish.Description;
+        item.isExpand = NO;
+        [self.tableData addObject:item];
+    }
     //NSLog(@"Hello World");
-    self.FavoriteTable.frame = self.view.frame;
-    self.FavoriteTable.rowHeight = 90;
-    self.FavoriteTable.allowsSelection = NO;
-    self.FavoriteTable.delegate = self;
-    self.FavoriteTable.dataSource = self;
-    self.FavoriteTable.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    self.FavoriteTable.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    //self.FavoriteTable.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
-    self.FavoriteTable.separatorColor = [UIColor lightGrayColor];
-    self.FavoriteTable.backgroundColor = [UIColor whiteColor/*white*/];
-    [self.view addSubview:self.FavoriteTable];
-}
+    self.EventsTable.frame = self.view.frame;
+    self.EventsTable.rowHeight = 90;
+    self.EventsTable.allowsSelection = NO;
+    self.EventsTable.delegate = self;
+    self.EventsTable.dataSource = self;
+    self.EventsTable.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    self.EventsTable.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    //self.EventsTable.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.EventsTable.separatorColor = [UIColor lightGrayColor];
+    self.EventsTable.backgroundColor = [UIColor whiteColor/*white*/];
+    [self.view addSubview:self.EventsTable];
 
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -81,7 +78,7 @@
                                                  title:@"Delete"];
         cell = [[SWTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                       reuseIdentifier:reuseIdentifier
-                                  containingTableView:self.FavoriteTable // Used for row height and selection
+                                  containingTableView:self.EventsTable // Used for row height and selection
                                    leftUtilityButtons:nil/*leftUtilityButtons*/
                                   rightUtilityButtons:rightUtilityButtons];
         cell.delegate = self;
@@ -102,10 +99,10 @@
         case 0:
         {
             // Delete button was pressed
-            NSIndexPath *cellIndexPath = [self.FavoriteTable indexPathForCell:cell];
+            NSIndexPath *cellIndexPath = [self.EventsTable indexPathForCell:cell];
             [self.tableData removeObjectAtIndex:cellIndexPath.row];
             [FavoriteList removeDishWithTitle:[cell.textLabel.text description]];
-            [self.FavoriteTable deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
+            [self.EventsTable deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
             break;
         }
         default:
@@ -120,7 +117,7 @@
 }
 
 - (void)viewDidUnload {
-    [self setFavoriteTable:nil];
+    [self setEventsTable:nil];
     //[self setDayPicker:nil];
     [super viewDidUnload];
     

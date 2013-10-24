@@ -22,6 +22,17 @@
 #define SCORE_KEY @"Score"
 
 
++ (NSArray *)allFavoriteClassResults
+{
+    return nil;
+}
+
++ (NSArray *)allFavoriteEventsResults
+
+{
+    return nil;
+}
+
 + (NSArray *)allFavoriteResults
 {
     NSMutableArray *allGameResults = [[NSMutableArray alloc] init];
