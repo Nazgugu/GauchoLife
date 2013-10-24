@@ -12,19 +12,20 @@
 #import "SUNViewController.h"
 #import "RootViewController.h"
 #import "FavoriteCourseViewController.h"
+#import "FavoriteEventsViewController.h"
 
 @interface SUNSlideSwitchDemoViewController : RootViewController<SUNSlideSwitchViewDelegate>
 {
     SUNSlideSwitchView *_slideSwitchView;
     FavoriteViewController *_dish;
     FavoriteCourseViewController *_course;
-    FavoriteViewController *_events;
+    FavoriteEventsViewController *_events;
 }
 
 @property (nonatomic, strong) IBOutlet SUNSlideSwitchView *slideSwitchView;
 
 @property (nonatomic, strong) FavoriteViewController *dish;
 @property (nonatomic, strong) FavoriteCourseViewController *course;
-@property (nonatomic, strong) FavoriteViewController *events;
+@property (nonatomic, strong) FavoriteEventsViewController *events;
 
 @end

@@ -27,7 +27,6 @@
 		AE04063E1812FD1100ED8462 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0406311812FD1100ED8462 /* SWTableViewCell.m */; };
 		AE04063F1812FD1100ED8462 /* TPGestureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0406331812FD1100ED8462 /* TPGestureTableViewCell.m */; };
 		AE0406401812FD1100ED8462 /* TPDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0406351812FD1100ED8462 /* TPDataModel.m */; };
-		AE0406411812FD1100ED8462 /* NSDate+Reporting.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0406371812FD1100ED8462 /* NSDate+Reporting.m */; };
 		AE0406421812FD1100ED8462 /* MZDay.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0406391812FD1100ED8462 /* MZDay.m */; };
 		AE0406431812FD1100ED8462 /* MZDayPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = AE04063B1812FD1100ED8462 /* MZDayPicker.m */; };
 		AE0406441812FD1100ED8462 /* MZDayPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE04063D1812FD1100ED8462 /* MZDayPickerCell.m */; };
@@ -139,6 +138,7 @@
 		AEDA291B1818D42A0067B9C7 /* FavoriteEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDA29191818D42A0067B9C7 /* FavoriteEventsViewController.m */; };
 		AEDA291C1818D42A0067B9C7 /* FavoriteEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEDA291A1818D42A0067B9C7 /* FavoriteEventsViewController.xib */; };
 		AEDA291E1818D6D50067B9C7 /* red_line_and_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDA291D1818D6D50067B9C7 /* red_line_and_shadow@2x.png */; };
+		AEDA29221818E28F0067B9C7 /* NSDate+MTDates.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDA29211818E28F0067B9C7 /* NSDate+MTDates.m */; };
 		AEF6B052180FC981003B4BB7 /* UCSBMAP.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF6B051180FC981003B4BB7 /* UCSBMAP.png */; };
 		C057E30A180FCE61009091C6 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C057E308180FCE61009091C6 /* MapViewController.m */; };
 		C057E30B180FCE61009091C6 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C057E309180FCE61009091C6 /* MapViewController.xib */; };
@@ -173,8 +173,6 @@
 		AE0406331812FD1100ED8462 /* TPGestureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPGestureTableViewCell.m; sourceTree = "<group>"; };
 		AE0406341812FD1100ED8462 /* TPDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPDataModel.h; sourceTree = "<group>"; };
 		AE0406351812FD1100ED8462 /* TPDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPDataModel.m; sourceTree = "<group>"; };
-		AE0406361812FD1100ED8462 /* NSDate+Reporting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Reporting.h"; sourceTree = "<group>"; };
-		AE0406371812FD1100ED8462 /* NSDate+Reporting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Reporting.m"; sourceTree = "<group>"; };
 		AE0406381812FD1100ED8462 /* MZDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZDay.h; sourceTree = "<group>"; };
 		AE0406391812FD1100ED8462 /* MZDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZDay.m; sourceTree = "<group>"; };
 		AE04063A1812FD1100ED8462 /* MZDayPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZDayPicker.h; sourceTree = "<group>"; };
@@ -334,6 +332,8 @@
 		AEDA29191818D42A0067B9C7 /* FavoriteEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteEventsViewController.m; sourceTree = "<group>"; };
 		AEDA291A1818D42A0067B9C7 /* FavoriteEventsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteEventsViewController.xib; sourceTree = "<group>"; };
 		AEDA291D1818D6D50067B9C7 /* red_line_and_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red_line_and_shadow@2x.png"; sourceTree = "<group>"; };
+		AEDA29201818E28F0067B9C7 /* NSDate+MTDates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MTDates.h"; sourceTree = "<group>"; };
+		AEDA29211818E28F0067B9C7 /* NSDate+MTDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MTDates.m"; sourceTree = "<group>"; };
 		AEF6B051180FC981003B4BB7 /* UCSBMAP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UCSBMAP.png; sourceTree = "<group>"; };
 		C057E307180FCE61009091C6 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../../../MapViewController.h; sourceTree = "<group>"; };
 		C057E308180FCE61009091C6 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../../../MapViewController.m; sourceTree = "<group>"; };
@@ -740,14 +740,13 @@
 		AE5A23E61815060100E6CF23 /* TableViewAndDayPicker */ = {
 			isa = PBXGroup;
 			children = (
+				AEDA291F1818E2710067B9C7 /* Date&Time */,
 				AE0406301812FD1100ED8462 /* SWTableViewCell.h */,
 				AE0406311812FD1100ED8462 /* SWTableViewCell.m */,
 				AE0406321812FD1100ED8462 /* TPGestureTableViewCell.h */,
 				AE0406331812FD1100ED8462 /* TPGestureTableViewCell.m */,
 				AE0406341812FD1100ED8462 /* TPDataModel.h */,
 				AE0406351812FD1100ED8462 /* TPDataModel.m */,
-				AE0406361812FD1100ED8462 /* NSDate+Reporting.h */,
-				AE0406371812FD1100ED8462 /* NSDate+Reporting.m */,
 				AE0406381812FD1100ED8462 /* MZDay.h */,
 				AE0406391812FD1100ED8462 /* MZDay.m */,
 				AE04063A1812FD1100ED8462 /* MZDayPicker.h */,
@@ -813,6 +812,15 @@
 				AE2861E81818C5AC00A28415 /* Favorites */,
 			);
 			name = SubControllers;
+			sourceTree = "<group>";
+		};
+		AEDA291F1818E2710067B9C7 /* Date&Time */ = {
+			isa = PBXGroup;
+			children = (
+				AEDA29201818E28F0067B9C7 /* NSDate+MTDates.h */,
+				AEDA29211818E28F0067B9C7 /* NSDate+MTDates.m */,
+			);
+			name = "Date&Time";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -993,7 +1001,6 @@
 				AE1CBD90181495C40052B218 /* UIImage+ImageEffects.m in Sources */,
 				AE5A23E51814F73E00E6CF23 /* CSNotificationView.m in Sources */,
 				AE2861FB1818CA1200A28415 /* SUNViewController.m in Sources */,
-				AE0406411812FD1100ED8462 /* NSDate+Reporting.m in Sources */,
 				AE04067718130A1200ED8462 /* DTProgressStatus.m in Sources */,
 				AE5A241C1815DF4E00E6CF23 /* DRDynamicSlideShow.m in Sources */,
 				AE04066E1813050F00ED8462 /* RootViewController.m in Sources */,
@@ -1006,6 +1013,7 @@
 				AE5A24131815D41900E6CF23 /* REMenu.m in Sources */,
 				AE5A23DF1814EF8E00E6CF23 /* CXAlertButtonContainerView.m in Sources */,
 				AEDA291B1818D42A0067B9C7 /* FavoriteEventsViewController.m in Sources */,
+				AEDA29221818E28F0067B9C7 /* NSDate+MTDates.m in Sources */,
 				AE0406501812FD6700ED8462 /* DiningViewController.m in Sources */,
 				AEDA29161818D1C60067B9C7 /* FavoriteCourseViewController.m in Sources */,
 				AE0406A61813173C00ED8462 /* NACallOutView.m in Sources */,

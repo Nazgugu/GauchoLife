@@ -20,6 +20,7 @@
 #import "UIColor+RGBA.h"
 #import "FavoriteViewController.h"
 #import "FavoriteList.h"
+#import "NSDate+MTDates.h"
 //#import "NRSimplePlist.h"
 //#import "TabBarViewController.h"
 //#import "PXAlertView.h"
@@ -40,7 +41,6 @@
 @end
 
 @implementation DiningViewController
-
 
 - (FavoriteList *)dishFavoriteList
 {
@@ -82,11 +82,15 @@
     self.dateFormatter = [[NSDateFormatter alloc] init];
     [self.dateFormatter setDateFormat:@"EE"];
     NSDate *date = [NSDate date];
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *components = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:date];
-    NSInteger Day = [components day];
-    NSInteger month = [components month];
-    NSInteger year = [components year];
+    /*NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:date];*/
+    NSUInteger Day = [date mt_dayOfMonth] + 1;
+    NSUInteger month = [date mt_monthOfYear];
+    NSUInteger year = [date mt_year];
+    NSDate *start = [date mt_startOfCurrentWeek];
+    NSDate *end = [date mt_endOfCurrentWeek];
+    NSUInteger startDayOfTheWeek = [start mt_dayOfMonth] + 1;
+    NSUInteger endDayOfTheWeek = [end mt_dayOfMonth] + 1;
     
     /*
      *  You can set month, year using:
@@ -98,7 +102,7 @@
      *  or set up date range:
      */
     
-    [self.dayPicker setStartDate:[NSDate dateFromDay:01 month:month year:year] endDate:[NSDate dateFromDay:30 month:month year:year]];
+    [self.dayPicker setStartDate:[NSDate dateFromDay:startDayOfTheWeek month:month year:year] endDate:[NSDate dateFromDay:endDayOfTheWeek month:month year:year]];
     
     [self.dayPicker setCurrentDate:[NSDate dateFromDay:Day month:month year:year] animated:NO];
     

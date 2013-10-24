@@ -46,7 +46,7 @@
     self.course = [[FavoriteCourseViewController alloc] init];
     self.course.title = @"My Courses";
     
-    self.events = [[FavoriteViewController alloc] init];
+    self.events = [[FavoriteEventsViewController alloc] init];
     self.events.title = @"Events List";
     
     UIButton *rightSideButton = [UIButton buttonWithType:UIButtonTypeCustom];
