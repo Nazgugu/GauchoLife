@@ -58,6 +58,7 @@
     //[self.view addGestureRecognizer:tapRecognizer];
 //    self.useBlurForPopup = YES;
         //
+    self.title = @"Dining";
     self.badgeCount = 0;
     //[NRSimplePlist editNumberPlist:@"badgePlist" withKey:@"badgeNumber" andNumber:@(self.badgeCount)];
     NSString *path=[[NSBundle mainBundle] pathForResource:@"TableViewData" ofType:@"plist"];
@@ -241,7 +242,7 @@
     
     //4. Define the final state (After the animation) and commit the animation
     [UIView beginAnimations:@"rotation" context:NULL];
-    [UIView setAnimationDuration:0.35];//animationDuration:0.5
+    [UIView setAnimationDuration:0.40];//animationDuration:0.5
     cell.layer.transform = CATransform3DIdentity;
     cell.alpha = 1;
     cell.layer.shadowOffset = CGSizeMake(0, 0);
@@ -335,7 +336,8 @@
                                  NSLog(@"Other (Red) button pressed");
                              }
                          }];*/
-    CXAlertView *alertView = [[CXAlertView alloc] initWithTitle:@"Do you want to add to\nyour favorite dish?" message:nil cancelButtonTitle:nil];
+    NSString *alertString = [NSString stringWithFormat:@"Do you want to add %@\nto your favorite dish?",[tableView cellForRowAtIndexPath:indexPath].textLabel.text];
+    CXAlertView *alertView = [[CXAlertView alloc] initWithTitle:alertString message:nil cancelButtonTitle:nil];
     [alertView addButtonWithTitle:@"Yes"
                              type:CXAlertViewButtonTypeCustom
                           handler:^(CXAlertView *alertView, CXAlertButtonItem *button) {

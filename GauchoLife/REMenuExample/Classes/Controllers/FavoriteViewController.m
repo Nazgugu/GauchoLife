@@ -33,6 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"My Favorites";
     self.tableData = [[NSMutableArray alloc]init];
      for (FavoriteList *favoriteDish in [FavoriteList allFavoriteResults])
      {

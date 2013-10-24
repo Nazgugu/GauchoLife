@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "30E0F77916D545F7001949EA"
                BuildableName = "GauchoLife.app"
-               BlueprintName = "REMenuExample"
-               ReferencedContainer = "container:REMenuExample.xcodeproj">
+               BlueprintName = "GauchoLife"
+               ReferencedContainer = "container:GauchoLife.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "30E0F77916D545F7001949EA"
             BuildableName = "GauchoLife.app"
-            BlueprintName = "REMenuExample"
-            ReferencedContainer = "container:REMenuExample.xcodeproj">
+            BlueprintName = "GauchoLife"
+            ReferencedContainer = "container:GauchoLife.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "30E0F77916D545F7001949EA"
             BuildableName = "GauchoLife.app"
-            BlueprintName = "REMenuExample"
-            ReferencedContainer = "container:REMenuExample.xcodeproj">
+            BlueprintName = "GauchoLife"
+            ReferencedContainer = "container:GauchoLife.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "30E0F77916D545F7001949EA"
             BuildableName = "GauchoLife.app"
-            BlueprintName = "REMenuExample"
-            ReferencedContainer = "container:REMenuExample.xcodeproj">
+            BlueprintName = "GauchoLife"
+            ReferencedContainer = "container:GauchoLife.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

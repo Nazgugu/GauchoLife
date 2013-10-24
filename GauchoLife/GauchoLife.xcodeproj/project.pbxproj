@@ -146,10 +146,10 @@
 		30E0F77D16D545F7001949EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		30E0F77F16D545F7001949EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30E0F78116D545F7001949EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		30E0F78516D545F7001949EA /* REMenuExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "REMenuExample-Info.plist"; sourceTree = "<group>"; };
+		30E0F78516D545F7001949EA /* GauchoLife-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GauchoLife-Info.plist"; sourceTree = "<group>"; };
 		30E0F78716D545F7001949EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30E0F78916D545F7001949EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		30E0F78B16D545F7001949EA /* REMenuExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "REMenuExample-Prefix.pch"; sourceTree = "<group>"; };
+		30E0F78B16D545F7001949EA /* GauchoLife-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GauchoLife-Prefix.pch"; sourceTree = "<group>"; };
 		30E0F78C16D545F7001949EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30E0F78D16D545F7001949EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE0406241812FCBF00ED8462 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -434,10 +434,10 @@
 			children = (
 				AE5A244418165E7000E6CF23 /* Plist */,
 				30B00DB717CCFD200010D439 /* Images */,
-				30E0F78516D545F7001949EA /* REMenuExample-Info.plist */,
+				30E0F78516D545F7001949EA /* GauchoLife-Info.plist */,
 				30E0F78616D545F7001949EA /* InfoPlist.strings */,
 				30E0F78916D545F7001949EA /* main.m */,
-				30E0F78B16D545F7001949EA /* REMenuExample-Prefix.pch */,
+				30E0F78B16D545F7001949EA /* GauchoLife-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -686,9 +686,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		30E0F77916D545F7001949EA /* REMenuExample */ = {
+		30E0F77916D545F7001949EA /* GauchoLife */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30E0F79716D545F7001949EA /* Build configuration list for PBXNativeTarget "REMenuExample" */;
+			buildConfigurationList = 30E0F79716D545F7001949EA /* Build configuration list for PBXNativeTarget "GauchoLife" */;
 			buildPhases = (
 				30E0F77616D545F7001949EA /* Sources */,
 				30E0F77716D545F7001949EA /* Frameworks */,
@@ -698,7 +698,7 @@
 			);
 			dependencies = (
 			);
-			name = REMenuExample;
+			name = GauchoLife;
 			productName = REMenuExample;
 			productReference = 30E0F77A16D545F7001949EA /* GauchoLife.app */;
 			productType = "com.apple.product-type.application";
@@ -717,7 +717,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 30E0F77516D545F7001949EA /* Build configuration list for PBXProject "REMenuExample" */;
+			buildConfigurationList = 30E0F77516D545F7001949EA /* Build configuration list for PBXProject "GauchoLife" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -729,7 +729,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30E0F77916D545F7001949EA /* REMenuExample */,
+				30E0F77916D545F7001949EA /* GauchoLife */,
 			);
 		};
 /* End PBXProject section */
@@ -948,8 +948,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "REMenuExample/REMenuExample-Prefix.pch";
-				INFOPLIST_FILE = "REMenuExample/REMenuExample-Info.plist";
+				GCC_PREFIX_HEADER = "REMenuExample/GauchoLife-Prefix.pch";
+				INFOPLIST_FILE = "REMenuExample/GauchoLife-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = GauchoLife;
 				PROVISIONING_PROFILE = "";
@@ -971,8 +971,8 @@
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "REMenuExample/REMenuExample-Prefix.pch";
-				INFOPLIST_FILE = "REMenuExample/REMenuExample-Info.plist";
+				GCC_PREFIX_HEADER = "REMenuExample/GauchoLife-Prefix.pch";
+				INFOPLIST_FILE = "REMenuExample/GauchoLife-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = GauchoLife;
 				PROVISIONING_PROFILE = "";
@@ -985,7 +985,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30E0F77516D545F7001949EA /* Build configuration list for PBXProject "REMenuExample" */ = {
+		30E0F77516D545F7001949EA /* Build configuration list for PBXProject "GauchoLife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30E0F79516D545F7001949EA /* Debug */,
@@ -994,7 +994,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30E0F79716D545F7001949EA /* Build configuration list for PBXNativeTarget "REMenuExample" */ = {
+		30E0F79716D545F7001949EA /* Build configuration list for PBXNativeTarget "GauchoLife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30E0F79816D545F7001949EA /* Debug */,

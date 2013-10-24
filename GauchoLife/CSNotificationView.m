@@ -441,10 +441,10 @@ static NSInteger const kCSNotificationViewEmptySymbolViewTag = 666;
     UIColor* blurTintColor;
     switch (style) {
         case CSNotificationViewStyleSuccess:
-            blurTintColor = [UIColor colorWithRed:0.21 green:0.72 blue:0.00 alpha:1.0];
+            blurTintColor = [UIColor colorWithRed:0.21 green:0.72 blue:0.00 alpha:0.72];
             break;
         case CSNotificationViewStyleError:
-            blurTintColor = [UIColor redColor];
+            blurTintColor = [UIColor colorWithRed:255.00 green:0.00 blue:0.00 alpha:0.68];
             break;
         default:
             break;

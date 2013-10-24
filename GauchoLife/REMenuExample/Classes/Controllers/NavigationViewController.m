@@ -87,8 +87,8 @@
                                                             [weakSelf setViewControllers:@[controller] animated:YES];
                                                         }];
     
-    REMenuItem *favoriteItem = [[REMenuItem alloc] initWithTitle:@"My Favorite"
-                                                        subtitle:@"List of My favorite."
+    REMenuItem *favoriteItem = [[REMenuItem alloc] initWithTitle:@"My Favorites"
+                                                        subtitle:@"List of My favorites."
                                                            image:[UIImage imageNamed:@"star"]
                                                 highlightedImage:nil
                                                           action:^(REMenuItem *item) {
