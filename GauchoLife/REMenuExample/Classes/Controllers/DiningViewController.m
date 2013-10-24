@@ -61,19 +61,6 @@
     self.title = @"Dining";
     self.badgeCount = 0;
     //[NRSimplePlist editNumberPlist:@"badgePlist" withKey:@"badgeNumber" andNumber:@(self.badgeCount)];
-    NSString *path=[[NSBundle mainBundle] pathForResource:@"TableViewData" ofType:@"plist"];
-    self.tableData = [[NSMutableArray alloc]init];
-    NSArray *sourceArray = [[NSArray alloc] initWithContentsOfFile:path];
-    //self.favorite.badge = self.badgeCount;
-    for(int i=0;i<[sourceArray count];i++){
-        NSDictionary *dict = [sourceArray objectAtIndex:i];
-        TPDataModel *item = [[TPDataModel alloc]init];
-        item.title = [dict objectForKey:@"Title"];
-        item.detail = [dict objectForKey:@"Detail"];
-        item.isExpand=NO;
-        [self.tableData addObject:item];
-    }
-    
     //self.tableData = [@[] mutableCopy];
     self.dayPicker.delegate = self;
     self.dayPicker.dataSource = self;
@@ -91,6 +78,9 @@
     NSDate *end = [date mt_endOfCurrentWeek];
     NSUInteger startDayOfTheWeek = [start mt_dayOfMonth] + 1;
     NSUInteger endDayOfTheWeek = [end mt_dayOfMonth] + 1;
+    NSUInteger today = [date mt_weekdayOfWeek] - 1;
+    [self loadDataOfToday:today];
+    NSLog(@"day of the week %d",[date mt_weekdayOfWeek] - 1);
     
     /*
      *  You can set month, year using:
@@ -138,6 +128,41 @@
 #endif
 }
 
+- (void)loadDataOfToday:(NSUInteger)today
+{
+    NSString *fileNameString = [NSString stringWithFormat:@"%d",today];
+    NSString *path=[[NSBundle mainBundle] pathForResource:fileNameString ofType:@"plist"];
+    if (!self.tableData)
+        {
+        self.tableData = [[NSMutableArray alloc]init];
+        NSArray *sourceArray = [[NSArray alloc] initWithContentsOfFile:path];
+        //self.favorite.badge = self.badgeCount;
+        for(int i=0;i<[sourceArray count];i++){
+            NSDictionary *dict = [sourceArray objectAtIndex:i];
+            TPDataModel *item = [[TPDataModel alloc]init];
+            item.title = [dict objectForKey:@"Title"];
+            item.detail = [dict objectForKey:@"Detail"];
+            item.isExpand=NO;
+            [self.tableData addObject:item];
+            }
+        }
+    else
+    {
+        [self.tableData removeAllObjects];
+        NSArray *sourceArray = [[NSArray alloc] initWithContentsOfFile:path];
+        //self.favorite.badge = self.badgeCount;
+        for(int i=0;i<[sourceArray count];i++){
+            NSDictionary *dict = [sourceArray objectAtIndex:i];
+            TPDataModel *item = [[TPDataModel alloc]init];
+            item.title = [dict objectForKey:@"Title"];
+            item.detail = [dict objectForKey:@"Detail"];
+            item.isExpand=NO;
+            [self.tableData addObject:item];
+        }
+    }
+
+}
+
 //Daypicker
 - (NSString *)dayPicker:(MZDayPicker *)dayPicker titleForCellDayNameLabelInDay:(MZDay *)day
 {
@@ -148,7 +173,10 @@
 - (void)dayPicker:(MZDayPicker *)dayPicker didSelectDay:(MZDay *)day
 {
     NSLog(@"Did select day %@",day.day);
-    
+    NSUInteger thisday = [day.date mt_weekdayOfWeek] - 1;
+    NSLog(@"this day is %d",thisday);
+    [self loadDataOfToday:thisday];
+    [self.tableView reloadData];
     //[self.tableData addObject:day];
     //[self.tableView reloadData];
 }

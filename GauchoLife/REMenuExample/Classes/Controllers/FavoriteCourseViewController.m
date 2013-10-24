@@ -43,7 +43,7 @@
         [self.tableData addObject:item];
     }
     //NSLog(@"Hello World");
-    self.CouseTable.frame = self.view.frame;
+    //self.CouseTable.frame = self.view.frame;
     self.CouseTable.rowHeight = 90;
     self.CouseTable.allowsSelection = NO;
     self.CouseTable.delegate = self;

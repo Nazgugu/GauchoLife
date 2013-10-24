@@ -11,12 +11,14 @@
 #import "FavoriteList.h"
 #import "SWTableViewCell.h"
 #import "TPDataModel.h"
+#import "SUNSlideSwitchDemoViewController.h"
 
 
 @interface FavoriteViewController () <UITableViewDataSource, UITableViewDelegate,SWTableViewCellDelegate>
 //@property (strong, nonatomic) DiningViewController *Dining;
 @property (nonatomic,strong) NSMutableArray *tableData;
 @property (strong, nonatomic) FavoriteList *dishFavoriteList;
+@property (strong, nonatomic) SUNSlideSwitchView *switchView;
 @end
 
 @implementation FavoriteViewController
@@ -44,7 +46,7 @@
          [self.tableData addObject:item];
      }
     //NSLog(@"Hello World");
-    self.FavoriteTable.frame = self.view.frame;
+    self.FavoriteTable.frame = CGRectMake(0, self.switchView.frame.origin.y + self.switchView.frame.size.height, self.FavoriteTable.frame.size.width, self.view.bounds.size.height - self.switchView.frame.size.height);
     self.FavoriteTable.rowHeight = 90;
     self.FavoriteTable.allowsSelection = NO;
     self.FavoriteTable.delegate = self;

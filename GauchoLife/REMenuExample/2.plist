@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Detail</key>
+		<string>Great Taco</string>
+		<key>Title</key>
+		<string>Taco</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>From Freebirds</string>
+		<key>Title</key>
+		<string>Burrito</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>Very Tasty</string>
+		<key>Title</key>
+		<string>Salmon</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>Fresh Flavor</string>
+		<key>Title</key>
+		<string>Orange Juice</string>
+	</dict>
+</array>
+</plist>

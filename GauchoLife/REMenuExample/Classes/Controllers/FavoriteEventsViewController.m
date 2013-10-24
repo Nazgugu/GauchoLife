@@ -41,7 +41,7 @@
         [self.tableData addObject:item];
     }
     //NSLog(@"Hello World");
-    self.EventsTable.frame = self.view.frame;
+    //self.EventsTable.frame = self.view.frame;
     self.EventsTable.rowHeight = 90;
     self.EventsTable.allowsSelection = NO;
     self.EventsTable.delegate = self;

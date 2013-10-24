@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Detail</key>
+		<string>Great Tastes</string>
+		<key>Title</key>
+		<string>Chow Mein</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>India Flavor</string>
+		<key>Title</key>
+		<string>Beef curry</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>Don&apos;t drink too much</string>
+		<key>Title</key>
+		<string>Beer</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>from sea</string>
+		<key>Title</key>
+		<string>Crab</string>
+	</dict>
+	<dict>
+		<key>Detail</key>
+		<string>I love them</string>
+		<key>Title</key>
+		<string>Nuts</string>
+	</dict>
+</array>
+</plist>

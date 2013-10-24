@@ -10,7 +10,7 @@
 
 static CGFloat const kCSNotificationViewHeight = 50.0f;
 static CGFloat const kCSNotificationViewSymbolViewSidelength = 44.0f;
-static NSTimeInterval const kCSNotificationViewDefaultShowDuration = 2.0;
+static NSTimeInterval const kCSNotificationViewDefaultShowDuration = 0.5;
 
 typedef enum {
     CSNotificationViewStyleSuccess,
