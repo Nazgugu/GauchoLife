@@ -20,7 +20,9 @@
 #import "UIColor+RGBA.h"
 #import "FavoriteViewController.h"
 #import "FavoriteList.h"
-#import "NSDate+MTDates.h"
+#import "NSDate+dateRanges.h"
+
+//#import "NSDate+MTDates.h"
 //#import "NRSimplePlist.h"
 //#import "TabBarViewController.h"
 //#import "PXAlertView.h"
@@ -40,6 +42,7 @@
 @property (strong, nonatomic) FavoriteList *dishFavoriteList;
 @property (nonatomic) NSUInteger todayDate;
 @property (nonatomic) NSUInteger willDate;
+@property (nonatomic) NSUInteger startDate;
 @property (strong, nonatomic) UIImageView *imageView;
 @property (strong, nonatomic) UIImage *darkImage;
 @property (strong, nonatomic) UIImage *lightImage;
@@ -59,52 +62,76 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissPopup)];
-    //tapRecognizer.numberOfTapsRequired = 1;
-    //tapRecognizer.delegate = self;
-    //[self.view addGestureRecognizer:tapRecognizer];
-//    self.useBlurForPopup = YES;
-        //
     self.title = @"Dining";
     self.badgeCount = [[[NSUserDefaults standardUserDefaults] objectForKey:@"Score"] intValue];
-    //self.animatedImagesView.dataSource = self;
-    //[NRSimplePlist editNumberPlist:@"badgePlist" withKey:@"badgeNumber" andNumber:@(self.badgeCount)];
-    //self.tableData = [@[] mutableCopy];
     self.dayPicker.delegate = self;
     self.dayPicker.dataSource = self;
     self.dayPicker.dayNameLabelFontSize = 12.0f;
     self.dayPicker.dayLabelFontSize = 18.0f;
+    
+    //DayPicker
     self.dateFormatter = [[NSDateFormatter alloc] init];
     [self.dateFormatter setDateFormat:@"EE"];
-    NSDate *date = [NSDate date];
-    /*NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *components = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:date];*/
-    NSUInteger Day = [date mt_dayOfMonth] + 1;
-    NSUInteger month = [date mt_monthOfYear];
-    NSUInteger year = [date mt_year];
-    NSDate *start = [date mt_startOfCurrentWeek];
-    NSDate *end = [date mt_endOfCurrentWeek];
-    NSUInteger startDayOfTheWeek = [start mt_dayOfMonth] + 1;
-    NSUInteger endDayOfTheWeek = [end mt_dayOfMonth] + 1;
-    NSUInteger today = [date mt_weekdayOfWeek] - 1;
-    [self loadDataOfToday:today];
-    self.todayDate = today;
-    self.willDate = today;
-    NSLog(@"day of the week %d",[date mt_weekdayOfWeek] - 1);
+    //NSCalendar get monday
+    
+    NSDate *today = [NSDate date];
+    
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    gregorian.firstWeekday = 2; // Sunday = 1, Saturday = 7
+    
+    NSDateComponents *components = [gregorian components:NSWeekOfYearCalendarUnit fromDate:today];
+    
+    NSUInteger weekOfYear = [components weekOfYear];
+    
+    NSDate *mondaysDate = nil;
+    [gregorian rangeOfUnit:NSWeekCalendarUnit startDate:&mondaysDate interval:NULL forDate:today];
+    
+    NSLog(@"%ld %@", (unsigned long)weekOfYear, mondaysDate);
+    
+    //NSCalendar get sunday
+    
+    // Get the weekday component of the current date
+    NSDateComponents *weekdayComponents = [gregorian components:NSWeekdayCalendarUnit
+                                                       fromDate:today];
     
     /*
-     *  You can set month, year using:
-     *  self.dayPicker.month = 9;
-     *  self.dayPicker.year = 2013;
-     *  [self.dayPicker setActiveDaysFrom:1 toDay:30];
-     *  [self.dayPicker setCurrentDay:15 animated:NO];
-     *
-     *  or set up date range:
+     Create a date components to represent the number of days to subtract from the current date.
+     The weekday value for Sunday in the Gregorian calendar is 1, so subtract 1 from the number of days to subtract from the date in question.  (If today is Sunday, subtract 0 days.)
      */
+    NSDateComponents *componentsToSubtract = [[NSDateComponents alloc] init];
+    [componentsToSubtract setDay: 0 - ([weekdayComponents weekday] - 1)];
     
-    [self.dayPicker setStartDate:[NSDate dateFromDay:startDayOfTheWeek month:month year:year] endDate:[NSDate dateFromDay:endDayOfTheWeek month:month year:year]];
+    NSDate *beginningOfWeek = [gregorian dateByAddingComponents:componentsToSubtract
+                                                         toDate:today options:0];
+    /*
+     Optional step:
+     beginningOfWeek now has the same hour, minute, and second as the original date (today).
+     To normalize to midnight, extract the year, month, and day components and create a new date from those components.
+     */
+    NSDateComponents *Sundaycomponents =
+    [gregorian components:(NSYearCalendarUnit | NSMonthCalendarUnit |
+                           NSDayCalendarUnit) fromDate: beginningOfWeek];
+    beginningOfWeek = [gregorian dateFromComponents:Sundaycomponents];
     
-    [self.dayPicker setCurrentDate:[NSDate dateFromDay:Day month:month year:year] animated:NO];
+    //
+    NSDate *date = [NSDate date];
+    NSString *str = [date descriptionWithLocale:[NSLocale currentLocale]];
+    NSLog(@"System time is %@",str);
+    NSDateComponents *startComponents = [gregorian components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:mondaysDate];
+    NSDateComponents *endComponents = [gregorian components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:beginningOfWeek];
+    NSDateComponents *todayComponents = [gregorian components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:date];
+    self.startDate = [startComponents day];
+    NSUInteger endDayOfTheWeek = [endComponents day];
+    NSUInteger ytoday = [todayComponents day];
+    NSLog(@"this week start:%d, end %d, today %d", self.startDate, endDayOfTheWeek, ytoday);
+    self.todayDate = ytoday - self.startDate;
+    self.willDate = self.todayDate;
+    [self loadDataOfToday:self.todayDate];
+    [self.dayPicker setStartDate:[date startOfThisMonth] endDate:[date endOfThisMonth]];
+    [self.dayPicker setActiveDaysFrom:self.startDate toDay:endDayOfTheWeek];
+    [self.dayPicker setCurrentDate:date];
+    
+    
     
     //Table View
     self.tableView.frame = CGRectMake(0, self.dayPicker.frame.origin.y + self.dayPicker.frame.size.height, self.tableView.frame.size.width, self.view.bounds.size.height-self.dayPicker.frame.size.height);
@@ -158,7 +185,7 @@
 - (void)loadDataOfToday:(NSUInteger)today
 {
     NSString *fileNameString = [NSString stringWithFormat:@"%d",today];
-    NSLog(@"file name string = %@",fileNameString);
+    //NSLog(@"file name string = %@",fileNameString);
     NSString *path=[[NSBundle mainBundle] pathForResource:fileNameString ofType:@"plist"];
     if (!self.tableData)
         {
@@ -211,7 +238,7 @@
         [self loadDataOfToday:self.willDate];
         [self.tableView reloadData];
     }
-    self.todayDate = [day.date mt_weekdayOfWeek] - 1;
+    self.todayDate = [day.day intValue] - self.startDate;
     NSLog (@"will %d",self.willDate);
     NSLog(@"today %d",self.todayDate);
     //[self.tableData addObject:day];
@@ -220,13 +247,13 @@
 
 - (void)dayPicker:(MZDayPicker *)dayPicker willSelectDay:(MZDay *)day
 {
-    self.willDate = [day.date mt_weekdayOfWeek] - 1;
+    self.willDate = [day.day intValue] - self.startDate;
     NSString *nameString = [NSString stringWithFormat:@"%d",self.willDate];
     self.darkImage = [[UIImage imageNamed:nameString] applyDarkEffect];
     self.lightImage = [[UIImage imageNamed:nameString] applyLightEffect];
     self.imageView = [[UIImageView alloc] initWithImage:self.darkImage];
-    self.willDate = [day.date mt_weekdayOfWeek] - 1;
-    NSLog(@"will day is %d",[day.date mt_weekdayOfWeek] - 1);
+    //self.willDate = [day.date mt_weekdayOfWeek] - 1;
+    //NSLog(@"will day is %d",[day.date mt_weekdayOfWeek] - 1);
     NSLog(@"originalday is %d",self.todayDate);
     NSLog(@"Will select day %@",day.day);
 }

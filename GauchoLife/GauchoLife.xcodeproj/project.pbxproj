@@ -139,7 +139,6 @@
 		AEDA291B1818D42A0067B9C7 /* FavoriteEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDA29191818D42A0067B9C7 /* FavoriteEventsViewController.m */; };
 		AEDA291C1818D42A0067B9C7 /* FavoriteEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEDA291A1818D42A0067B9C7 /* FavoriteEventsViewController.xib */; };
 		AEDA291E1818D6D50067B9C7 /* red_line_and_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDA291D1818D6D50067B9C7 /* red_line_and_shadow@2x.png */; };
-		AEDA29221818E28F0067B9C7 /* NSDate+MTDates.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDA29211818E28F0067B9C7 /* NSDate+MTDates.m */; };
 		AEDA29241818FC1A0067B9C7 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDA29231818FC1A0067B9C7 /* 7.png */; };
 		AEDA292B181994510067B9C7 /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEDA2925181994510067B9C7 /* 2.plist */; };
 		AEDA292C181994510067B9C7 /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEDA2926181994510067B9C7 /* 3.plist */; };
@@ -154,6 +153,7 @@
 		AEDA293D1819CDBB0067B9C7 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDA29371819CDBB0067B9C7 /* 0.png */; };
 		AEDA293F1819CFCC0067B9C7 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDA293E1819CFCC0067B9C7 /* 5.png */; };
 		AEF6B052180FC981003B4BB7 /* UCSBMAP.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF6B051180FC981003B4BB7 /* UCSBMAP.png */; };
+		AEF75212181DB1B1008096A4 /* NSDate+dateRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF75211181DB1B1008096A4 /* NSDate+dateRanges.m */; };
 		C057E30A180FCE61009091C6 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C057E308180FCE61009091C6 /* MapViewController.m */; };
 		C057E30B180FCE61009091C6 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C057E309180FCE61009091C6 /* MapViewController.xib */; };
 /* End PBXBuildFile section */
@@ -349,8 +349,6 @@
 		AEDA29191818D42A0067B9C7 /* FavoriteEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteEventsViewController.m; sourceTree = "<group>"; };
 		AEDA291A1818D42A0067B9C7 /* FavoriteEventsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteEventsViewController.xib; sourceTree = "<group>"; };
 		AEDA291D1818D6D50067B9C7 /* red_line_and_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red_line_and_shadow@2x.png"; sourceTree = "<group>"; };
-		AEDA29201818E28F0067B9C7 /* NSDate+MTDates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MTDates.h"; sourceTree = "<group>"; };
-		AEDA29211818E28F0067B9C7 /* NSDate+MTDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MTDates.m"; sourceTree = "<group>"; };
 		AEDA29231818FC1A0067B9C7 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
 		AEDA2925181994510067B9C7 /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
 		AEDA2926181994510067B9C7 /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
@@ -365,6 +363,8 @@
 		AEDA29371819CDBB0067B9C7 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		AEDA293E1819CFCC0067B9C7 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		AEF6B051180FC981003B4BB7 /* UCSBMAP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UCSBMAP.png; sourceTree = "<group>"; };
+		AEF75210181DB1B1008096A4 /* NSDate+dateRanges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+dateRanges.h"; sourceTree = "<group>"; };
+		AEF75211181DB1B1008096A4 /* NSDate+dateRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+dateRanges.m"; sourceTree = "<group>"; };
 		C057E307180FCE61009091C6 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../../../MapViewController.h; sourceTree = "<group>"; };
 		C057E308180FCE61009091C6 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../../../MapViewController.m; sourceTree = "<group>"; };
 		C057E309180FCE61009091C6 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapViewController.xib; path = ../../../MapViewController.xib; sourceTree = "<group>"; };
@@ -627,6 +627,7 @@
 		AE2861E41818C58000A28415 /* Dining */ = {
 			isa = PBXGroup;
 			children = (
+				AEF7520F181DB19E008096A4 /* Date */,
 				AE2BE983181C43A300FAD025 /* Animated Image */,
 				AEDA29311819CDA50067B9C7 /* BackGroundImage */,
 				AE0406481812FD6700ED8462 /* DiningViewController.h */,
@@ -788,7 +789,6 @@
 		AE5A23E61815060100E6CF23 /* TableViewAndDayPicker */ = {
 			isa = PBXGroup;
 			children = (
-				AEDA291F1818E2710067B9C7 /* Date&Time */,
 				AE0406301812FD1100ED8462 /* SWTableViewCell.h */,
 				AE0406311812FD1100ED8462 /* SWTableViewCell.m */,
 				AE0406321812FD1100ED8462 /* TPGestureTableViewCell.h */,
@@ -868,15 +868,6 @@
 			name = SubControllers;
 			sourceTree = "<group>";
 		};
-		AEDA291F1818E2710067B9C7 /* Date&Time */ = {
-			isa = PBXGroup;
-			children = (
-				AEDA29201818E28F0067B9C7 /* NSDate+MTDates.h */,
-				AEDA29211818E28F0067B9C7 /* NSDate+MTDates.m */,
-			);
-			name = "Date&Time";
-			sourceTree = "<group>";
-		};
 		AEDA29311819CDA50067B9C7 /* BackGroundImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -892,6 +883,15 @@
 			);
 			name = BackGroundImage;
 			path = ../../Images;
+			sourceTree = "<group>";
+		};
+		AEF7520F181DB19E008096A4 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				AEF75210181DB1B1008096A4 /* NSDate+dateRanges.h */,
+				AEF75211181DB1B1008096A4 /* NSDate+dateRanges.m */,
+			);
+			name = Date;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1057,6 +1057,7 @@
 				AE5A24161815D41900E6CF23 /* REMenuItemView.m in Sources */,
 				AE04063F1812FD1100ED8462 /* TPGestureTableViewCell.m in Sources */,
 				AE0406A51813173C00ED8462 /* NAAnnotation.m in Sources */,
+				AEF75212181DB1B1008096A4 /* NSDate+dateRanges.m in Sources */,
 				30E0F78A16D545F7001949EA /* main.m in Sources */,
 				AE0406A81813173C00ED8462 /* NAPinAnnotationView.m in Sources */,
 				AE5A24121815D41900E6CF23 /* RECommonFunctions.m in Sources */,
@@ -1098,7 +1099,6 @@
 				AE5A24131815D41900E6CF23 /* REMenu.m in Sources */,
 				AE5A23DF1814EF8E00E6CF23 /* CXAlertButtonContainerView.m in Sources */,
 				AEDA291B1818D42A0067B9C7 /* FavoriteEventsViewController.m in Sources */,
-				AEDA29221818E28F0067B9C7 /* NSDate+MTDates.m in Sources */,
 				AE0406501812FD6700ED8462 /* DiningViewController.m in Sources */,
 				AEDA29161818D1C60067B9C7 /* FavoriteCourseViewController.m in Sources */,
 				AE0406A61813173C00ED8462 /* NACallOutView.m in Sources */,
