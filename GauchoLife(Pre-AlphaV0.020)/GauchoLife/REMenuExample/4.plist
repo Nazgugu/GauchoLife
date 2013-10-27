@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Date</key>
+		<date>2013-10-31T15:00:00Z</date>
+		<key>Detail</key>
+		<string>(v) Available in Carrillo at breakfast.</string>
+		<key>Title</key>
+		<string>Fruit</string>
+	</dict>
+	<dict>
+		<key>Date</key>
+		<date>2013-10-31T15:00:00Z</date>
+		<key>Detail</key>
+		<string>(v) Available in Carrillo at breakfast.</string>
+		<key>Title</key>
+		<string>Orange Juice</string>
+	</dict>
+</array>
+</plist>
